@@ -17,7 +17,7 @@ const useHello = (slug?: string) => {
       { value: '100+', label: 'Ads Accounts' },
       { value: 'ROI', label: 'Focused Strategies' },
     ],
-    profileImage: '/assets/Images/pro.svg', // must be inside /public/images/
+    profileImage: '/assets/Images/Profile.png', // must be inside /public/images/
     linkedin: 'https://www.linkedin.com/in/shitanshu-kumar1/', // replace with actual URL
   }
 }

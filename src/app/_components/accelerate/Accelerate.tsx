@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import useAccelerate from './hooks/useAccelerate'
 import { useState } from 'react'
-import line from '@/../public/assets/Svg/line.svg'
+import line from '../../../../public/assets/Svg/line.svg'
 import { FaArrowRightLong } from "react-icons/fa6";
 import CustomDropdown from '@/_components/CustomDropdown'
 import Link from 'next/link'
@@ -60,10 +60,10 @@ const payload = {
       <div className="w-full lg:w-[60%] mb-12 lg:mb-0 lg:pr-[40px] ">
         <h1 className="text-[32px] md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-semibold font-jakarta leading-12 md:leading-16 xl:leading-20 mb-6 relative flex flex-wrap">
           {heading.split(' ').map((word, idx) => {
-            if (word === 'Agency') {
+            if (word === 'Qualified') {
               return (
                 <span key={idx} className="relative inline-block ">
-                  <span className="relative z-10">Agency</span>
+                  <span className="relative z-10">Qualified</span>
                   <Image
                     src={line}
                     alt="underline"
@@ -72,7 +72,7 @@ const payload = {
                 </span>
               )
             }
-            if (['Expert', 'Performance','Digital', 'Marketing'].includes(word)) {
+            if (['Company', 'Focused','Demand', 'Marketing'].includes(word)) {
               return (
                 <span key={idx} className="text-[#FF9900] mx-1">
                   {word}
@@ -85,7 +85,7 @@ const payload = {
         <p className="text-[#94A3B8] md:text-[16px] text-[14px] leading-[22px] md:leading-7 font-semibold mb-6 font-jakarta">{description}</p>
 
 
-        <ul className="space-y-2 mb-8 ml-10">
+        <ul className="space-y-2 mb-8 ">
           {bullets.map((point, idx) => (
             <li key={idx} className="flex items-center gap-2 " >
               <span >

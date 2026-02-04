@@ -1,7 +1,7 @@
 // hooks/useAccelerate.ts
 
 const useAccelerate = (slug?: string) => {
-  const isSaasPage = slug === 'b2b-digital-marketing-agency';
+  const isSaasPage = slug === 'b2b-lead-generation-company';
   return {
     heading: isSaasPage
       ? "B2B digital marketing agency focused on lead quality, pipeline growth, and conversion efficiency through performance marketing, SEO, and CRO."
