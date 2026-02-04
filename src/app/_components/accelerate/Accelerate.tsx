@@ -13,7 +13,7 @@ export default function Accelerate({ slug }: { slug?: string }) {
   const {
     heading,
     description,
-    descriptionBullets,
+
     bullets,
     stats,
     formTitle,
