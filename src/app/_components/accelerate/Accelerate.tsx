@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import useAccelerate from './hooks/useAccelerate'
 import { useState } from 'react'
-import line from '../../../../public/assets/Svg/line.svg'
+import line from '@/../public/assets/Svg/line.svg'
 import { FaArrowRightLong } from "react-icons/fa6";
 import CustomDropdown from '@/_components/CustomDropdown'
 import Link from 'next/link'
@@ -45,7 +45,7 @@ const payload = {
     })
 
     const data = await res.json()
-    router.push('/thank-you') 
+    router.push('/thank-you')
     console.log(data)
   } catch (err) {
     alert('❌ Submission failed. Try again.')
@@ -83,14 +83,7 @@ const payload = {
           })}
         </h1>
         <p className="text-[#94A3B8] md:text-[16px] text-[14px] leading-[22px] md:leading-7 font-semibold mb-6 font-jakarta">{description}</p>
-<ul className="space-y-2 mb-10 text-[#94A3B8] text-sm ml-10">
-  {descriptionBullets.map((item, idx) => (
-    <li key={idx} className="flex gap-2">
-      <span>-</span>
-      <span>{item}</span>
-    </li>
-  ))}
-</ul>
+
 
         <ul className="space-y-2 mb-8 ml-10">
           {bullets.map((point, idx) => (

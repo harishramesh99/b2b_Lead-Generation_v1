@@ -6,7 +6,7 @@ const useProven = (slug?: string) => {
   return {
     heading: 'Proven Results',
         subheading: isSaasPage
-      ? "Discover the transformative impact of tailored Digital marketing strategies through our case studies. Each snapshot below offers a glimpse into the challenges faced, solutions implemented, and outstanding results achieved."
+      ? "Real examples of how focused performance marketing translates into measurable B2B growth outcomes."
       : "Real examples of how focused performance marketing translates into measurable B2B growth outcomes.",
     case: {
       title: 'Strategic Turnaround at Outplay',

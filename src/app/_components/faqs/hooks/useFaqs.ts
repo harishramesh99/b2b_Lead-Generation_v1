@@ -2,17 +2,17 @@ const faqData = [
   {
     question: 'What services do you offer?',
     answer:
-      'I offer Performance Marketing, SEO, and Conversion Rate Optimisation for B2B companies. The focus is on generating qualified demand, improving conversion efficiency, and building a predictable sales pipeline rather than driving vanity metrics.',
+      'I offer Performance Marketing, SEO, and Conversion Rate Optimisation for B2B companies. The focus is on generating qualified demand, improving conversion efficiency, and building a predictable sales pipeline rather than chasing vanity metrics.',
   },
   {
     question: 'Do you specialize in B2B growth?',
     answer:
-      "Yes. My work is focused specifically on B2B businesses with longer sales cycles, higher deal values, and multiple decision makers. Strategies are designed around lead quality, pipeline contribution, and sales alignment, not just traffic or lead volume.",
+      "Yes. My work is focused specifically on B2B businesses with longer sales cycles, higher deal values, and multiple decision makers. Strategies are built around lead quality, pipeline contribution, and sales alignment, not just traffic or lead volume.",
   },
   {
     question: 'What does the Google Ads Audit process involve?',
     answer:
-      'The audit looks at account structure, keyword intent, targeting, tracking accuracy, conversion setup, and spend efficiency. The goal is to identify gaps, wasted spend, and opportunities to improve lead quality and performance before scaling further.',
+      'The audit reviews account structure, keyword intent, targeting, tracking accuracy, conversion setup, and spend efficiency. The goal is to identify gaps, wasted spend, and opportunities to improve lead quality and performance before scaling.',
   },
   {
     question: 'How fast can we go live?',
@@ -33,7 +33,7 @@ const faqData = [
     {
     question: 'What kind of results can we expect?',
     answer:
-      'Results depend on market, budget, sales cycle, and starting point. The focus is always on improving efficiency, lead quality, and pipeline impact over time. I set realistic expectations upfront and optimise consistently based on real performance data.',  
+      'Results depend on market, budget, sales cycle, and starting point. The focus is always on improving efficiency, lead quality, and pipeline impact over time. Expectations are set clearly upfront and optimisation is driven by real performance data.',
   },
 ]
 

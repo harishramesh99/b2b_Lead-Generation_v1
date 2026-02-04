@@ -5,20 +5,20 @@ const useAccelerate = (slug?: string) => {
   return {
     heading: isSaasPage
       ? "B2B digital marketing agency focused on lead quality, pipeline growth, and conversion efficiency through performance marketing, SEO, and CRO."
-      : "B2B Digital Marketing Agency Focused on Building a Predictable Sales Pipeline",
+      : "B2B Lead Generation Company Focused on Qualified Demand, Not Lead Volume",
     description:
-      "We help B2B companies generate qualified demand through performance-driven lead generation, SEO, and conversion rate optimisation. Built for long sales cycles, not vanity metrics.",
-  
+      "We help B2B companies generate high intent, sales ready leads through performance driven lead generation strategies. Built for long sales cycles, complex buying journeys, and revenue focused outcomes, not vanity lead numbers.",
+
 descriptionBullets: [
-  "Designed specifically for B2B buying behaviour and sales cycles",
-  "Focus on SQL quality, CAC efficiency, and pipeline contribution",
-  "Strategy and execution aligned with your sales process",
+  "Designed specifically for B2B buying behaviour and multi stakeholder decision making",
+  "Focus on SQL quality, cost efficiency, and pipeline impact",
+  "Lead generation strategy aligned tightly with your sales process and qualification criteria",
 ],
 
     bullets: [
-      "Higher quality inbound leads",
-      "Lower cost per qualified opportunity",
-      "Better conversion across key funnel stages",
+      "Designed specifically for B2B buying behaviour and multi stakeholder decision making",
+      "Focus on SQL quality, cost efficiency, and pipeline impact",
+      "BLead generation strategy aligned tightly with your sales process and qualification criteria",
     ],
     stats: [
       { label: "demo bookings", value: "+72%" },

@@ -8,7 +8,7 @@ const useServices = () => {
         title: 'Performance Marketing',
         color: 'text-yellow-400',
         description:
-          'Drive consistent, high-intent demand through precision-led paid acquisition.\n\nWe design and manage performance marketing programs that align with B2B buying behaviour, longer sales cycles, and revenue-focused outcomes. Campaigns are built around intent, account quality, and pipeline contribution rather than volume alone.',
+          'Drive consistent, high intent demand from the right decision makers.\n\We design and manage performance marketing programs focused on generating sales ready leads through platforms like Google, LinkedIn, and Meta. Campaigns are built around buyer intent, targeting precision, and qualification logic to support pipeline growth rather than lead volume.',
         tools: [
           { name: 'LinkedIn Ads', logo: '/assets/Svg/linkedin.svg' },
           { name: 'Google Ads', logo: '/assets/Svg/googleads.svg' },
@@ -19,7 +19,7 @@ const useServices = () => {
         title: 'Conversion Rate Optimisation (CRO)',
         color: 'text-green-400',
         description:
-          'Turn existing traffic into qualified enquiries and sales conversations.\n\nnWe optimise key conversion points across your website and landing pages to reduce friction, improve clarity, and increase conversion efficiency. Every change is informed by user behaviour, data insights, and business objectives.',
+          'Turn ad traffic into qualified leads and sales conversations.\n\nnWe optimise landing pages, forms, and user journeys to reduce friction and improve lead quality. Every improvement is driven by behavioural data and real conversion insights, ensuring traffic converts into meaningful enquiries, not wasted clicks.',
         tools: [
           { name: 'Figma', logo: '/assets/Svg/figma.svg' },
           { name: 'Hotjar', logo: '/assets/Svg/hotjar.svg' },
@@ -27,10 +27,10 @@ const useServices = () => {
         ],
       },
       {
-        title: 'SEO for B2B',
+        title: 'Lead Qualification & Funnel Design',
         color: 'text-sky-400',
         description:
-          'Build long-term inbound demand from high-intent B2B search.\n\nOur SEO approach focuses on commercial, decision-stage keywords that attract qualified buyers, not just traffic. From technical foundations to content and conversion alignment, SEO is treated as a pipeline-building channel, not a visibility exercise.',
+          'Ensure only the right leads reach your sales team.\n\nLead generation does not end at form fills. We design qualification layers, messaging flows, and funnel structures that filter out low-intent traffic and surface serious prospects. This helps sales teams focus on conversations that have a higher likelihood of closing.',
         tools: [
           { name: 'SEMRUSH', logo: '/assets/Svg/semrush.svg' },
           { name: 'Google Analytics', logo: '/assets/Svg/googleana.svg' },
