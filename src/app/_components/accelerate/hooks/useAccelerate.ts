@@ -25,7 +25,7 @@ descriptionBullets: [
       { label: "bounce rate", value: "-42%" },
       { label: "sign-up rate", value: "+3.4×" },
     ],
-    formTitle: "Tell us about your SaaS",
+    formTitle: "Tell Us About Your Business",
     formSubtitle: "Get a free marketing audit tailored to your funnel and growth goals.",
     formFields: [
       { label: "Full Name", placeholder: "e.g. Sarah Johnson", required: true },
