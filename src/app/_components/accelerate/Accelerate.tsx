@@ -58,7 +58,10 @@ const payload = {
 <section className="bg-black text-white flex flex-col lg:flex-row justify-center items-center p-6 md:p-[120px]">
       {/* Left Side */}
       <div className="w-full lg:w-[60%] mb-12 lg:mb-0 lg:pr-[40px] ">
-        <h1 className="text-[32px] md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-semibold font-jakarta leading-12 md:leading-16 xl:leading-20 mb-6 relative flex flex-wrap">
+        <h1 className="text-[32px] md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl
+               font-semibold font-jakarta
+               leading-[44px] md:leading-[52px] xl:leading-[61px]
+               mb-6 relative flex flex-wrap">
           {heading.split(' ').map((word, idx) => {
             if (word === 'Qualified') {
               return (
