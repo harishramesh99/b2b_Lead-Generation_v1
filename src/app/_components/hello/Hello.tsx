@@ -44,7 +44,7 @@ export default function Hello({ slug }: { slug?: string }) {
         <div className="relative w-full lg:w-1/2 flex-shrink-0 group">
 
           <Image
-            src={`${BASE_PATH}/assets/Images/ProfilePicture.png`}
+            src={`${BASE_PATH}/assets/Images/Profile.png`}
             alt={name}
             width={500}
             height={500}
