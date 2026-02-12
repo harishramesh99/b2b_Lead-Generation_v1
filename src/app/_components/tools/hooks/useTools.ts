@@ -1,4 +1,5 @@
 // hooks/useTools.ts
+const BASE_PATH = '/b2b-lead-generation-company';
 
 const useTools = () => {
   return {
@@ -6,43 +7,43 @@ const useTools = () => {
     subheading: 'Empowering Strategies With Advanced Tools',
     tools: [
       [
-        '/assets/Images/Logos/ads.svg',
-        '/assets/Images/Logos/ana.svg',
-        '/assets/Images/Logos/bing.svg',
-        '/assets/Images/Logos/cap.svg',
-        '/assets/Images/Logos/hotjar.svg',
-        '/assets/Images/Logos/hubspot.svg',
-        '/assets/Images/Logos/in.svg',
-        '/assets/Images/Logos/looker.svg',
-        '/assets/Images/Logos/meta.svg',
-        '/assets/Images/Logos/web.svg'
+        `${BASE_PATH}/assets/Images/Logos/ads.svg`,
+        `${BASE_PATH}/assets/Images/Logos/ana.svg`,
+        `${BASE_PATH}/assets/Images/Logos/bing.svg`,
+        `${BASE_PATH}/assets/Images/Logos/cap.svg`,
+        `${BASE_PATH}/assets/Images/Logos/hotjar.svg`,
+        `${BASE_PATH}/assets/Images/Logos/hubspot.svg`,
+        `${BASE_PATH}/assets/Images/Logos/in.svg`,
+        `${BASE_PATH}/assets/Images/Logos/looker.svg`,
+        `${BASE_PATH}/assets/Images/Logos/meta.svg`,
+        `${BASE_PATH}/assets/Images/Logos/web.svg`
       ],
       [
-        '/assets/Images/Logos/hubspot.svg',
-        '/assets/Images/Logos/in.svg',
-        '/assets/Images/Logos/looker.svg',
-        '/assets/Images/Logos/meta.svg',
-        '/assets/Images/Logos/web.svg',
-        '/assets/Images/Logos/ads.svg',
-        '/assets/Images/Logos/ana.svg',
-        '/assets/Images/Logos/bing.svg',
-        '/assets/Images/Logos/cap.svg',
-        '/assets/Images/Logos/hotjar.svg',
+        `${BASE_PATH}/assets/Images/Logos/hubspot.svg`,
+        `${BASE_PATH}/assets/Images/Logos/in.svg`,
+        `${BASE_PATH}/assets/Images/Logos/looker.svg`,
+        `${BASE_PATH}/assets/Images/Logos/meta.svg`,
+        `${BASE_PATH}/assets/Images/Logos/web.svg`,
+        `${BASE_PATH}/assets/Images/Logos/ads.svg`,
+        `${BASE_PATH}/assets/Images/Logos/ana.svg`,
+        `${BASE_PATH}/assets/Images/Logos/bing.svg`,
+        `${BASE_PATH}/assets/Images/Logos/cap.svg`,
+        `${BASE_PATH}/assets/Images/Logos/hotjar.svg`,
       ],
       [
-        '/assets/Images/Logos/ads.svg',
-        '/assets/Images/Logos/ana.svg',
-        '/assets/Images/Logos/bing.svg',
-        '/assets/Images/Logos/cap.svg',
-        '/assets/Images/Logos/hotjar.svg',
-        '/assets/Images/Logos/hubspot.svg',
-        '/assets/Images/Logos/in.svg',
-        '/assets/Images/Logos/looker.svg',
-        '/assets/Images/Logos/meta.svg',
-        '/assets/Images/Logos/web.svg'
+        `${BASE_PATH}/assets/Images/Logos/ads.svg`,
+        `${BASE_PATH}/assets/Images/Logos/ana.svg`,
+        `${BASE_PATH}/assets/Images/Logos/bing.svg`,
+        `${BASE_PATH}/assets/Images/Logos/cap.svg`,
+        `${BASE_PATH}/assets/Images/Logos/hotjar.svg`,
+        `${BASE_PATH}/assets/Images/Logos/hubspot.svg`,
+        `${BASE_PATH}/assets/Images/Logos/in.svg`,
+        `${BASE_PATH}/assets/Images/Logos/looker.svg`,
+        `${BASE_PATH}/assets/Images/Logos/meta.svg`,
+        `${BASE_PATH}/assets/Images/Logos/web.svg`
       ],
     ],
-  }
-}
+  };
+};
 
-export default useTools
+export default useTools;

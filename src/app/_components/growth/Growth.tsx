@@ -2,9 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react'
 import useGrowth from './hooks/useGrowth'
-import growthImg from '../../../../public/assets/Images/Growth.svg'
 import Image from 'next/image'
-
+const BASE_PATH = '/b2b-lead-generation-company';
 /* Sticky offsets */
 const TOPS_DESKTOP = [
   'top-[260px]',
@@ -54,7 +53,7 @@ type GrowthStep = {
   description: string
 }
 
-/* 🔹 Card Component (hook lives here – SAFE) */
+/* 🔹 Card Component */
 function GrowthCard({
   step,
   topDesktop,
@@ -73,6 +72,7 @@ function GrowthCard({
       className={[
         'sticky',
         'flex justify-center',
+        'px-4 md:px-0',
         topMobile,
         `md:${topDesktop}`,
         OVERLAP_MOBILE,
@@ -82,35 +82,24 @@ function GrowthCard({
     >
       <div
         ref={ref}
-        className="
-          relative
-          flex flex-col md:flex-row
-          gap-4 md:gap-8
-          transition-transform duration-300 ease-out
-          w-full md:w-auto
-        "
+        className="flex flex-col md:flex-row gap-6 md:gap-8 transition-transform duration-300 ease-out"
         style={{
           transform: stuck ? 'scaleY(0.96)' : 'scaleY(1)',
           transformOrigin: 'top',
-
-          // ✅ mobile-friendly width: 100%, desktop stays 1000px
           width: '100%',
           maxWidth: '1000px',
-
           padding: '20px 24px',
           alignItems: 'flex-start',
           borderRadius: '36px',
-
           overflow: 'hidden',
-
           border: '0.5px solid rgba(255, 255, 255, 0.50)',
           background:
             'linear-gradient(270deg, rgba(15, 23, 42, 0.40) 0%, rgba(15, 23, 42, 0.40) 100%)',
           backdropFilter: 'blur(66px)',
           WebkitBackdropFilter: 'blur(66px)',
-          boxShadow: '0px 20px 40px rgba(15, 23, 42, 0.40)',
         }}
       >
+        {/* BACKGROUND OVERLAY */}
         <div
           className="absolute inset-0 z-[-100]"
           style={{
@@ -120,8 +109,8 @@ function GrowthCard({
         />
 
         {/* LEFT COLUMN */}
-        <div className="w-full md:w-[380px] md:shrink-0">
-          <div className="flex flex-col md:flex-row md:items-center gap-3 mb-2">
+        <div className="w-full md:w-[380px] shrink-0">
+          <div className="flex items-center gap-3 mb-2">
             {/* STEP PILL */}
             <div
               className="flex text-[10px] font-medium"
@@ -144,7 +133,7 @@ function GrowthCard({
             </div>
 
             {/* TITLE */}
-            <h3 className="text-white text-[22px] md:text-[25px] font-semibold leading-[30px] md:leading-[33px]">
+            <h3 className="text-white text-[20px] md:text-[25px] font-semibold leading-[28px] md:leading-[33px]">
               {step.title}
             </h3>
           </div>
@@ -152,11 +141,11 @@ function GrowthCard({
 
         {/* RIGHT COLUMN */}
         <div className="w-full md:w-[560px] flex flex-col">
-          <p className="text-white text-[15px] md:text-[16px] leading-[22px] md:leading-[20px] mb-2 opacity-90 break-words">
+          <p className="text-white text-[14px] md:text-[16px] leading-[20px] mb-2 opacity-90">
             {step.subtitle}
           </p>
 
-          <p className="text-[#94A3B8] text-[13px] leading-[20px] break-words">
+          <p className="text-[#94A3B8] text-[13px] leading-[20px]">
             {step.description}
           </p>
         </div>
@@ -173,38 +162,29 @@ export default function Growth() {
       {/* HEADER */}
       <div className="max-w-[900px] mx-auto text-center mb-20">
         <div className="mx-auto mb-8 relative w-[140px] h-[140px]">
-          <Image src={growthImg} alt="Growth" fill className="object-contain" />
+          <Image
+            src={`${BASE_PATH}/assets/images/Growth.svg`}
+            alt="Growth"
+            fill
+            className="object-contain"
+            priority
+          />
         </div>
 
-        <h2
-          className="text-white"
-          style={{
-            fontFamily: 'Plus Jakarta Sans',
-            fontSize: '49px',
-            fontWeight: 600,
-            lineHeight: '61px',
-          }}
-        >
+        <h2 className="text-white text-[49px] font-semibold leading-[61px]">
           The Growth Execution Framework
-
         </h2>
 
-        <p
-          className="mt-4"
-          style={{
-            fontFamily: 'Plus Jakarta Sans',
-            fontSize: '16px',
-            fontWeight: 400,
-            lineHeight: '28px',
-            color: '#94A3B8',
-          }}
-        >
-          A clear, structured process focused on what drives measurable B2B growth.
+        <p className="mt-4 text-[#94A3B8] text-[16px] leading-[28px]">
+          A clear, structured process focused on what drives results.
         </p>
       </div>
 
       {/* STACK */}
-      <div className="relative mx-auto md:pb-[40vh]" style={{ maxWidth: '846px' }}>
+      <div
+        className="relative mx-auto md:pb-[40vh]"
+        style={{ maxWidth: '846px' }}
+      >
         {GROWTH_STEPS.map((step, i) => (
           <GrowthCard
             key={step.stepLabel}

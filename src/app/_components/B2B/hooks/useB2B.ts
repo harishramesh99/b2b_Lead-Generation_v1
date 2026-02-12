@@ -1,4 +1,5 @@
 // hooks/useSaas.ts
+const BASE_PATH = '/b2b-lead-generation-company';
 
 const useSaas = () => {
   return {
@@ -11,21 +12,21 @@ const useSaas = () => {
     },
     pillars: [
       {
-        icon: '/assets/Svg/award.svg',
+        icon: `${BASE_PATH}/assets/Svg/award.svg`,
         title: 'Dedicated B2B Expertise',
         color: 'text-yellow-400',
         description:
           'Deep experience working with B2B businesses that operate with longer sales cycles, multiple stakeholders, and high value deals. \n\n Every strategy is designed around real B2B growth metrics such as lead quality, cost per qualified opportunity, pipeline contribution, and alignment with sales teams.',
       },
       {
-        icon: '/assets/Svg//coins.svg',
+        icon: `${BASE_PATH}/assets/Svg/coins.svg`,
         title: 'Transparency and Accountability',
         color: 'text-sky-400',
         description:
           'Clear reporting, consistent communication, and complete visibility into performance.\n\n You always know where budget is being spent, what is working, what is not, and why decisions are being made, with all actions tied back to your business goals.',
       },
       {
-        icon: '/assets/Svg/graph.svg',
+        icon: `${BASE_PATH}/assets/Svg/graph.svg`,
         title: 'Proven, Impactful Results',
         color: 'text-emerald-400',
         description:
