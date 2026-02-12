@@ -44,7 +44,7 @@ export default function Hello({ slug }: { slug?: string }) {
         <div className="relative w-full lg:w-1/2 flex-shrink-0 group">
 
           <Image
-            src={`${BASE_PATH}/assets/images/ProfilePicture.png`}
+            src={`${BASE_PATH}/assets/Images/ProfilePicture.png`}
             alt={name}
             width={500}
             height={500}
@@ -62,7 +62,7 @@ export default function Hello({ slug }: { slug?: string }) {
             <span>View my profile on</span>
 
             <Image
-              src={`${BASE_PATH}/assets/icons/LinkedIn_2.svg`}
+              src={`${BASE_PATH}/assets/Icons/LinkedIn_2.svg`}
               alt="LinkedIn"
               width={18}
               height={18}
@@ -72,7 +72,7 @@ export default function Hello({ slug }: { slug?: string }) {
           {/* Always-visible LinkedIn Icon */}
           <div className="absolute bottom-3 left-3 group-hover:opacity-0 transition-opacity duration-300">
             <Image
-              src={`${BASE_PATH}/assets/icons/LinkedinButton.svg`}
+              src={`${BASE_PATH}/assets/Icons/LinkedinButton.svg`}
               alt="LinkedIn"
               width={32}
               height={32}

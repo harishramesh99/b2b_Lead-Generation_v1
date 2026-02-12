@@ -163,7 +163,7 @@ export default function Growth() {
       <div className="max-w-[900px] mx-auto text-center mb-20">
         <div className="mx-auto mb-8 relative w-[140px] h-[140px]">
           <Image
-            src={`${BASE_PATH}/assets/images/Growth.svg`}
+            src={`${BASE_PATH}/assets/Images/Growth.svg`}
             alt="Growth"
             fill
             className="object-contain"
