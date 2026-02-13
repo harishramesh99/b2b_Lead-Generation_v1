@@ -8,6 +8,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import CustomDropdown from '@/_components/CustomDropdown'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import useUTM from './hooks/useUTM'
 
 export default function Accelerate({ slug }: { slug?: string }) {
   const {
@@ -21,35 +22,55 @@ export default function Accelerate({ slug }: { slug?: string }) {
     formFields,
     cta,
   } = useAccelerate(slug)
+const utm = useUTM()
+
 const router = useRouter()
 
-  const [formData, setFormData] = useState<Record<string, string>>({})
+  const [formData, setFormData] = useState<Record<string, string>>({});
+
+
 const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault()
 
-  // Map formData keys to match HubSpot field names
-const payload = {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
+  const payload = {
   firstname: formData['Full Name'] || '',
-  email: formData['Business Email'] || formData['Business email'] || formData['Email'] || '',  // capture all possible labels
+  email:
+    formData['Business Email'] ||
+    formData['Business email'] ||
+    formData['Email'] ||
+    '',
   website: formData['Company Website URL'] || '',
   services: formData['Services You’re Interested In'] || '',
-  growth_blocker: formData["What’s blocking growth right now?"] || ''
+  growth_blocker: formData["What’s blocking growth right now?"] || '',
+
+  // ✅ ADD UTM FIELDS
+  ...utm
 }
 
 
   try {
-    const res = await fetch('/api/submit-to-hubspot', {
+    const res = await fetch(`${basePath}/api/submit-lead`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
     })
 
     const data = await res.json()
+
+    // 🔴 HANDLE DUPLICATE EMAIL
+    if (res.status === 409 && data.error === 'EMAIL_EXISTS') {
+      alert('⚠️ Email already available')
+      return
+    }
+
+    if (!res.ok) throw new Error('Failed')
+
     router.push('/thank-you')
-    console.log(data)
   } catch (err) {
     alert('❌ Submission failed. Try again.')
-    console.error('Error submitting to HubSpot:', err)
+    console.error(err)
   }
 }
 
